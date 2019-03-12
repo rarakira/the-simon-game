@@ -60,12 +60,12 @@ $(".btn").click (function (event){
   } else {
     if (currentLevel === level - 1) { // last index of the array
     checkAnswer(currentLevel);
-    playSound(userChosenColour); // animation
     if (started === true) { //
       console.log("Level-up!");
       playSound(userChosenColour); // animation
       setTimeout(nextSequence, 1000);
     } else {
+      playSound(userChosenColour); // animation
       gamePattern = [];
     }
   } else if (currentLevel < level) { // more than one object in the array left
